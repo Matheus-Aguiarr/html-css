@@ -1,0 +1,22 @@
+body {
+    color: white;
+    background-color: rgba(35, 104, 104, 0.877);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+    
+}
+
+section {
+    background-color: rgb(16, 11, 39);
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    width: 500px;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 250px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- :: = pseudo-element  -->
+    <!-- > = children -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+ 
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: aqua;
+        }        
+
+        a::after {
+            content: '   [link]';
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/Matheus-Aguiarr">github repositorio</a></li>
+        <li><a href="https://www.youtube.com/channel/UC4W45dqYT6bIt4B8E_B73fw">canal do ytb</a></li>
+        <li><a href="https://www.cursoemvideo.com/">site do cursoemvideo</a></li>
+    </ul>
+ 
+</body>
+</html>
