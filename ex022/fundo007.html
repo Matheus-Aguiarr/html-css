@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        o container, por ser a caixa maior, e conter algo dentro dele, vai obter position relative, enquanto o conteudo, que é o que ta dentro do container, tem o position absolute.
+        ao fazer isso, voce pode usar as propriedades left, right, top, e bottom
+
+        sempre use o translate no conteudo, nunca no container 
+        O translate funciona da seguinte maneira: primeiro numero = direita e esquerda.
+        segundo numero: cima e baixo.
+
+        ao fazer o primeiro numero ser negativo, ele ira mexer para a esquerda 
+        e ao fazer o segundo numero ser negativo ele ira mexer para  cima
+
+        */
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
