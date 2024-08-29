@@ -9,19 +9,28 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        /* Configurando minha tabela, 400px para ficar maior, border-collapse, ao colocar esse estilo, a borda fica totalmente junta, parecendo uma tabela de excel mesmo */
+        /* Configurando minha tabela, 400px para ficar maior, border-collapse, ao colocar esse estilo que por padrão vem separate, a borda fica totalmente junta, parecendo uma tabela de excel mesmo */
         table {
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
         }
         /* Essa é a minha td (table data) que é os dados da tabela, nela eu coloquei uma borda e um padding, para ficar parecido com uma tabela de excel. */
         td {
             border: 1px solid black;
             padding: 8px;
+            /* alinhamento horizontal */
+            text-align: center;
+            /* alinhamento vertical */
+            vertical-align: middle;
         }
         /* Fiz com que apenas as minhas table rows com a classe linha tenham um background color de gray, para ficar mais facil de olhar a tabela  */
         tr.linha {
             background-color: lightgray;
+        }
+
+        .numero {
+            text-align: right;
         }
     </style>
 </head>
