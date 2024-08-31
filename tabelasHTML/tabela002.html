@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style> 
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            /* coloque position relative para conseguir usar o cabeçalho fixo */
+            position: relative;
+        }   
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        /* cabeçalho fixo na tabela */
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+
+        /* De duas em duas ele coloca o background color em cinza, para fazer o efeito zebrado */
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes </h1>
+    <!-- 
+        Anatomia para tabelas grandes
+        TABLE
+            CAPTION
+            HEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <!-- TABELA  -->
+    <table>
+        <!-- titulo da tabela(antes de comecala) -->
+        <caption>População das unidades federativas</caption>
+        <!-- CABEÇALHO DA TABELA -->
+        <thead>
+            <!-- LINHAS DO CABEÇALHO DA TABELA -->
+            <tr>
+                <!-- TITULOS DO CABEÇALHO DA TABELA -->
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+
+        <!-- CORPO DA TABELA -->
+        <tbody>
+            <!-- PRIMEIRA LINHA DO CORPO DA TABELA -->
+            <tr>
+                <!-- PRIMEIRO DADO DA PRIMEIRA LINHA -->
+                <td>São Paulo</td>
+                <!-- SEGUNDO DADO DA PRIMEIRA LINHA -->
+                <td class="num">45 919 049</td>
+            </tr>
+            <!-- SEGUNDA LINHA DO CORPO DA TABELA -->
+            <tr>
+                <!-- PRIMEIRO DADO DA SEGUNNDA LINHA -->
+                <td>Minas Gerais</td>
+                <!-- SEGUNDO DADO DA SEGUNDA LINHA -->
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio De Janeiro</td>
+                <td class="num">17 987 198</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">10 908 199</td>
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+            <tr>
+                <td>Las Vegas</td>
+                <td class="num">90 109 292</td>
+            
+            </tr>
+
+        </tbody>
+
+        <!-- FOOTER DA TABELA -->
+        <tfoot>
+            <!-- PRIMEIRA LINHA DO FOOTER DA TABELA (geralmente tem uma só) -->
+            <tr>
+                <!-- TITULO DA PRIMEIRA LINHA DO FOOTER DA TABELA -->
+                <th>Total de Habitantes</th>
+                <!-- PRIMEIRO DADO DA PRIMEIRA LINHA DO FOOTER DA TABELA -->
+                <td class="num"><strong>109.827.928</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
