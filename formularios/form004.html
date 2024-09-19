@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Exemplo de formulário 
+    </h1>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+            
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </p>
+            <p>
+                <label for="tel">telefone</label>
+                <input type="tel" name="tel" id="tel" pattern="^\d[0-9]{4}-[0-9]{4}$">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
