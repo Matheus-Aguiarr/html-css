@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        fieldset input {
+            width: fit-content;
+        }
+        fieldset label {
+            width: fit-content;
+        }
+        fieldset p {
+            width: fit-content;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <p>
+                <input type="checkbox" id="bas"> <label for="bas">Basquete</label>
+            </p>
+            <p>
+                <input type="checkbox" id="fut"> <label for="fut">Futebol</label>
+            
+            </p>
+            <p>
+                <input type="checkbox" id="volei"> <label for="volei">Volei</label>
+            </p>
+            <p>
+                <input type="checkbox" id="volei-praia"> <label for="volei-praia">Volei de praia</label>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
