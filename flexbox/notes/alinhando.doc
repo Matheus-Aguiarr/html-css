@@ -1,0 +1,8 @@
+Alinhando Itens usando flexbox
+
+Para alinhar um item usando o flexbox, quando queremos alinhar no main-axis, sempre usamos JUSTIFY-CONTENT.
+
+Para alinhar no cross-axis, utilizamos ALIGN-ITEMS.
+
+
+    NUNCA SE ESQUEÇA DE UTILIZAR SEMPRE NO ELEMENTO PAI
