@@ -6,3 +6,35 @@ Para alinhar no cross-axis, utilizamos ALIGN-ITEMS.
 
 
     NUNCA SE ESQUEÇA DE UTILIZAR SEMPRE NO ELEMENTO PAI
+
+ALIGN-CONTENT não é a mesma coisa que justify-content, nem muito mesmo a mesma coisa que o align-items.
+
+O ALIGN-CONTENT alinha os elementos no cross-axis, porém, apenas quando estiverem empacotados. Isso é, com o (flex-wrap: wrap;)
+
+align-content: stretch;
+
+já vem por padrão, divide a quantidade de linhas e coloca eles separados, porém estica os conteudos.
+
+align-content: flex-start;
+
+irá colocar todos no inicio do cross-axis, ou seja, no cross-start, deixando o cross-end com um espaço em branco.
+
+align-content: flex-end;
+
+faz a mesma coisa que o flex-start, porem, coloca todos no fim do cross-axis (cross-end), e deixa o espaço em branco no inicio (cross-start).
+
+align-content: center;
+
+simplesmente irá centralizar tudo, assim como os outros center's.
+
+align-content: space-between;
+
+deixa um espaço entre eles, deixando um espaço em branco no meio para caso venha a quebrar mais uma linha.
+
+align-content: space-evenly;
+
+exatamente a mesma forma ed trabalhar, colocando um espaço no cross-end e um no cross-start e um espaço entre eles.
+
+align-content: space-around;
+
+ele divide o cross-axis em espaços iguais, depois coloca os itens dentro das areas divididas e centraliza os valores dentro deles. É parecido com o stretch, porém não estica o conteudo de dentro do container.
