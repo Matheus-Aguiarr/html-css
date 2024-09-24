@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box 010</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+        div.container {
+            background-color: salmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item {
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+         
+        }
+        div.item1 {
+            flex: 1 auto;
+        }
+        div.item2 {
+            flex: 1 auto;
+        }
+        div.item3 {
+            flex: 1 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">A</div>
+        <div class="item item2">B</div>
+        <div class="item item3">C</div>
+    </div>
+</body>
+</html>

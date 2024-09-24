@@ -1,0 +1,23 @@
+shorthand - flex: grow + shrink + basis;
+
+flex: 0 1 auto; {
+    é exatamente o padrao
+}
+
+flex: initial; {
+    também é exatamente o padrao 
+}
+
+flex: 0 0 auto {
+    os elementos não estão flexiveis, nao crescem, nao diminuem, e dependem do tamanho do container
+}
+
+flex: none {
+    mesma coisa que flex: 0 0 auto;
+}
+
+flex: 1 1 auto; {
+    é o contrario do 0 0 auto, é muito flexivel
+}
+
+mesma coisa que flex: auto;
