@@ -2,8 +2,37 @@ Quando a gente cria container flex-box, a parte de fora é fle, mas a parte de d
 
 ORDER {
     Todo item em flexbox, todo elemento que estiver dentro do container, tem por padrão order: 0;
+
+    O order vai funcionar de acordo com o que vc mandar, se vc colocar por exemplo a seguinte ideia: 
+        item1 {
+            order: -1;
+        }
+        item2 {
+            order: -2
+        }
+        item3 {
+            order: 7;
+        }
+    A ordem será respectivamente: 
+        item 1 - item 2 - item 3
+    E por aí vai...
 }
 
 ALIGN-SELF {
-
+    se aplica aos itens, e vai funcionar diretamente no cross-axis.
+    align-self: auto; {
+        o valor auto vai herdar a caracteristica de alinhamento vertical do seu pai.
+    }
+    align-self: flex-start; {
+        é o alinhamento perto do cross-start.
+    }
+    align-self: flex-end; {
+        perto do cross-end.
+    }
+    align-self: center; {
+        calcula o meio entre o cross-start e o cross-end.
+    }
+    align-self: stretch; {
+        vai puxar e esticar o eixo transversal;
+    }
 }

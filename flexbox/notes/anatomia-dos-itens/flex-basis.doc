@@ -1,0 +1,11 @@
+flex-basis: auto; {
+    A propriedade flex-basis sempre vem como padrão no auto;
+    o que significa que o tamanho do eixo principal é ditada pelo tamanho do conteudo dentro do item, sendo assim, um item que tenha um texto maior dentro, vai ser necessariamente maior.
+}
+
+Porém, podemos mudar o tamanho dessa propriedade de acordo com o que quisermos, vamos a um exemplo: 
+
+flex-basis: 200px; {
+    ele vai fazer os itens ficarem sempre com 200px, independente do conteudo que está dentro do item.
+    se eu colocar o flex-basis de 200px pra todos, ele vai ficar com 200px apenas enquanto der pra ficar, caso nao exista espaço fisico para isso, todos vao diminuir de forma igual.
+}
