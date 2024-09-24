@@ -1,0 +1,30 @@
+Justify-content: 
+
+vai fazer o alinhamento em relação ao main-axis (eixo principal), se o main-axis for em pé, ele vai alinhar verticalmente, e se for deitado, horizontalmente.
+
+O main-axis tem dois pontos importantes, main-start e main-end. 
+
+Justify-content: flex-start;
+
+O espaço livre vai ficar perto do main-end, e o primeiro item vai ficar grudado no inicio (main-start), já que o justify-content alinha de acordo com o main-axis.
+
+Justify-content: flex-end;
+
+O espaço livre vai ficar grudado no inicio do eixo principal (main-start), enquanto o conteúdo vai todo se grudar no fim do eixo principal (main-end).
+
+Justify-content: center;
+
+Esse é mais simples e óbvio, os itens ficarão centralizados ao meio do MAIN-AXIS. 
+
+Justify-content: space-between;
+
+Vai colocar o primeiro item no main-start e o ultimo item no main-end, fazendo todos os espaçamentos entre os outros itens ficarem ficarem completamente iguais.
+
+Justify-content: space-evenly;
+
+Vai colocar os elementos dispostos dentro do container fazendo com que eles fiquem com exatamente o mesmo espaço entre eles. 
+(incluindo antes do primeiro e depois do ultimo).
+
+Justify-content: space-around;
+
+Vai pegar o espaço útil do container e vai dividir em três pedações iguais, e depois vai centralizar os itens dentro desses espaços. Exemplo: em um container com 9px de largura, essa propriedade irá dividi-lo entre 3 espaços de 3px e colocar os itens centralizados em cada um dos espaços. 
