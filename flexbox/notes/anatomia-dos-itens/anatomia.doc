@@ -1,0 +1,9 @@
+Quando a gente cria container flex-box, a parte de fora é fle, mas a parte de dentro não é flex. Porém eu posso pegar um item e transformar em flex.
+
+ORDER {
+    Todo item em flexbox, todo elemento que estiver dentro do container, tem por padrão order: 0;
+}
+
+ALIGN-SELF {
+
+}
