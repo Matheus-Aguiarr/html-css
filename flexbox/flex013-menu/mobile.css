@@ -1,0 +1,13 @@
+header {
+    flex-direction: column;
+}
+
+header h1 {
+    flex: 1;
+}
+
+
+header nav {
+    flex-direction: column;
+    width: 95vw;
+}
