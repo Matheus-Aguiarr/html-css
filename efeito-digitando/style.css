@@ -1,0 +1,57 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.txt-animado {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.txt-animado span {
+    position: relative;
+}
+
+.txt-animado span::before{
+    content: "";
+    color: #ff008b;
+    animation: palavras 20s infinite;
+}
+
+.txt-animado span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #ff008b;
+    right: -10px;
+    animation: cursor 1.5s infinite, digita 20s steps(30) infinite;
+    width: calc(100% + 12px);
+    background-color: black;
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 12px);
+    }
+}
+
+@keyframes cursor{
+    0% {
+        border-left: 2px solid black;
+    }
+}
+
+@keyframes palavras {
+    0%, 100% {
+        content: "Grupo Pão de Açúcar";
+    }
+    
+}
